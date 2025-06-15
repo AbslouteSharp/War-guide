@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>راهنمای جامع در وقوع جنگ - سازمان صلیب سرخ و حلال احمر</title>
+  <meta name="description" content="راهنمای کامل و جامع اقدامات ضروری در هنگام وقوع جنگ به زبان فارسی، به همراه شماره‌های ضروری ایران و منابع معتبر صلیب سرخ و حلال احمر." />
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <style>
+    /* فونت و پایه */
+    body {
+      margin: 0;
+      font-family: 'Vazir', Tahoma, Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+      direction: rtl;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+
+    /* هدر */
+    header {
+      background-color: #b84a4a; /* قرمز ملایم‌تر */
+      color: white;
+      padding: 12px 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .logo img {
+      height: 45px;
+      width: auto;
+      filter: drop-shadow(0 0 1px rgba(0,0,0,0.2));
+      border-radius: 4px;
+      background: white;
+      padding: 3px;
+    }
+
+    .logo h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    /* منوی همبرگری */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 28px;
+      height: 25px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1100;
+      transition: transform 0.3s ease;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      transform-origin: 1px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    /* ناوبری */
+    nav#nav-menu {
+      display: flex;
+      gap: 20px;
+      transition: max-height 0.4s ease;
+    }
+
+    nav#nav-menu ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+      max-height: none;
+      overflow-y: visible;
+    }
+
+    nav#nav-menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    nav#nav-menu ul li a:hover,
+    nav#nav-menu ul li a:focus {
+      background-color: #8a2222;
+      outline: none;
+    }
+
+    /* انیمیشن کوتاه لینک انتخاب شده */
+    nav#nav-menu ul li a.active-link {
+      background-color: #8a2222;
+      transform: scale(1.05);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* موبایل */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav#nav-menu {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: #b84a4a;
+        flex-direction: column;
+        width: 260px;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1050;
+      }
+
+      nav#nav-menu.open {
+        transform: translateX(0);
+      }
+
+      nav#nav-menu ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 20px;
+      }
+
+      nav#nav-menu ul li a {
+        padding: 10px 15px;
+        font-size: 1.1rem;
+      }
+    }
+
+    /* بخش‌ها */
+    main section {
+      margin-bottom: 50px;
+      background: #fff;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(184 74 74 / 0.15);
+      transition: box-shadow 0.3s ease, opacity 0.6s ease-out, transform 0.6s ease-out;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    main section.visible {
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 4px 14px rgb(184 74 74 / 0.3);
+    }
+
+    main section:focus-within {
+      box-shadow: 0 0 14px #b84a4a;
+      outline: none;
+    }
+
+    h2 {
+      color: #b84a4a;
+      font-size: 1.9rem;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #b84a4a;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #7a1e1e;
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-right: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-right: 24px;
+      font-weight: 600;
+    }
+
+    ul li::before {
+      content: '✔️';
+      position: absolute;
+      right: 0;
+      color: #b84a4a;
+    }
+
+    /* لینک‌های منابع */
+    a {
+      color: #7a1e1e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* فوتر */
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 0.9rem;
+      user-select: none;
+      margin-top: 60px;
+      border-top: 3px solid #b84a4a;
+    }
+
+    /* بهبود تجربه اسکرول */
+    html {
+      scroll-behavior: smooth;
+    }
+
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="#" class="logo" aria-label="لوگوی سازمان صلیب سرخ و حلال احمر">
+        <img src="img/logo.png" alt="لوگوی صلیب سرخ" />
+        <h1>راهنمای وقوع جنگ</h1>
+      </a>
+
+      <button class="hamburger" aria-label="باز کردن منوی ناوبری" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu" role="navigation" aria-label="منوی ناوبری">
+        <ul>
+          <li><a href="#introduction">مقدمه</a></li>
+          <li><a href="#essential-actions">اقدامات ضروری</a></li>
+          <li><a href="#emergency-contacts">شماره‌های ضروری ایران</a></li>
+          <li><a href="#shelter-guidelines">راهنمای پناهگاه</a></li>
+          <li><a href="#health-safety">سلامت و ایمنی</a></li>
+          <li><a href="#communication">ارتباط و اطلاع‌رسانی</a></li>
+          <li><a href="#psychological-support">حمایت روانی</a></li>
+          <li><a href="#legal-rights">حقوق قانونی</a></li>
+          <li><a href="#resources">منابع و مراجع</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="introduction" tabindex="-1">
+      <h2>مقدمه</h2>
+      <p>
+        در شرایط وقوع جنگ، آمادگی و اطلاع کافی از اقدامات ضروری می‌تواند جان انسان‌ها را نجات دهد. این راهنمای جامع به زبان فارسی، با تکیه بر منابع سازمان جهانی صلیب سرخ و جمعیت هلال احمر جمهوری اسلامی ایران تهیه شده است. هدف از این راهنما ارائه دستورالعمل‌های کاربردی، قابل فهم و قابل اجرا برای همگان می‌باشد تا در مواجهه با بحران‌های جنگی بهترین واکنش‌ها را داشته باشند.
+      </p>
+      <p>
+        جنگ و منازعات مسلحانه تاثیرات مخربی بر زندگی افراد، زیرساخت‌ها و امنیت جامعه دارند. آگاهی از روش‌های حفاظت، کمک‌های اولیه، و شیوه‌های ارتباطی در این شرایط بحرانی اهمیت ویژه‌ای دارد. این راهنما تلاش کرده با اطلاعات دقیق و به روز، سطح آمادگی شما را افزایش دهد.
+      </p>
+    </section>
+
+    <section id="essential-actions" tabindex="-1">
+      <h2>اقدامات ضروری هنگام وقوع جنگ</h2>
+      <p>
+        هنگام وقوع جنگ، رعایت اقدامات زیر از اهمیت حیاتی برخوردار است:
+      </p>
+      <ul>
+        <li>آماده‌سازی کیت اضطراری شامل مواد غذایی، آب، داروهای ضروری، و لوازم کمک‌های اولیه</li>
+        <li>اطلاع از مسیرهای امن برای تخلیه سریع</li>
+        <li>همراه داشتن مدارک شناسایی و پول نقد در شرایط اضطراری</li>
+        <li>عدم انتشار شایعات و اطلاعات نادرست برای جلوگیری از ایجاد هراس</li>
+        <li>رعایت دستورالعمل‌های سازمان‌های امدادی و مسئولان امنیتی</li>
+      </ul>
+      <p>
+        به خاطر داشته باشید که حفظ آرامش و تفکر منطقی در این شرایط، کمک می‌کند تصمیمات درست‌تری اتخاذ کنید و جان خود و خانواده‌تان را حفظ نمایید.
+      </p>
+    </section>
+
+    <section id="emergency-contacts" tabindex="-1">
+      <h2>شماره‌های ضروری ایران</h2>
+      <p>در شرایط اضطراری، تماس سریع با شماره‌های زیر می‌تواند حیاتی باشد:</p>
+      <ul>
+        <li>۱۱۰ - پلیس</li>
+        <li>۱۱۵ - اورژانس</li>
+        <li>۱۱۲ - آتش‌نشانی</li>
+        <li>۱۱۳ - فوریت‌های پزشکی</li>
+        <li>۱۱۴ - امداد و نجات</li>
+        <li>۱۲۵ - سازمان آتش‌نشانی تهران</li>
+        <li>۱۱۸ - مرکز اطلاعات و کنترل بحران</li>
+        <li>۱۱۹ - اورژانس اجتماعی</li>
+        <li>۱۳۰ - اطلاعات سپاه پاسداران انقلاب اسلامی</li>
+      </ul>
+      <p>
+        حفظ آرامش و ارائه اطلاعات دقیق به اپراتورهای این مراکز باعث می‌شود کمک به سرعت به محل شما برسد.
+      </p>
+    </section>
+
+    <section id="shelter-guidelines" tabindex="-1">
+      <h2>راهنمای استفاده از پناهگاه</h2>
+      <p>
+        پناهگاه‌ها به عنوان بهترین محل‌های امن در هنگام وقوع جنگ شناخته می‌شوند. نکات زیر را برای استفاده بهینه از پناهگاه‌ها رعایت کنید:
+      </p>
+      <ul>
+        <li>قبل از وقوع بحران، محل پناهگاه‌های معتبر در نزدیکی محل سکونت خود را بشناسید.</li>
+        <li>در هنگام هشدار حمله، سریعاً به پناهگاه بروید و درب‌ها و پنجره‌ها را ببندید.</li>
+        <li>مواد ضروری مانند آب، غذا، باتری، و لوازم کمک‌های اولیه را همراه داشته باشید.</li>
+        <li>از تجمع بیش از حد در پناهگاه‌ها خودداری کنید تا شرایط بهداشتی و امنیتی حفظ شود.</li>
+        <li>با آرامش در پناهگاه بمانید و منتظر اطلاعیه‌های رسمی بمانید.</li>
+      </ul>
+      <p>
+        رعایت این نکات موجب افزایش امنیت و حفظ سلامت شما و خانواده‌تان خواهد شد.
+      </p>
+    </section>
+
+    <section id="health-safety" tabindex="-1">
+      <h2>سلامت و ایمنی</h2>
+      <p>
+        حفظ سلامت جسمی و روانی در شرایط جنگی از اهمیت ویژه‌ای برخوردار است. اقدامات زیر را رعایت کنید:
+      </p>
+      <ul>
+        <li>استفاده از ماسک و ضدعفونی‌کننده برای جلوگیری از بیماری‌های واگیردار</li>
+        <li>مصرف آب سالم و مواد غذایی بهداشتی</li>
+        <li>دوری از مناطق درگیری و پرخطر</li>
+        <li>توجه به نیازهای روانی و تلاش برای حفظ آرامش</li>
+        <li>مراجعه به مراکز درمانی معتبر در صورت آسیب یا بیماری</li>
+      </ul>
+      <p>
+        مراقبت از خود و دیگران، پایه‌ی اصلی بقا در شرایط بحرانی است.
+      </p>
+    </section>
+
+    <section id="communication" tabindex="-1">
+      <h2>ارتباط و اطلاع‌رسانی</h2>
+      <p>
+        حفظ کانال‌های ارتباطی با خانواده، دوستان و مسئولان ضروری است. نکات زیر را در نظر داشته باشید:
+      </p>
+      <ul>
+        <li>اطمینان از شارژ دستگاه‌های ارتباطی و همراه داشتن پاوربانک</li>
+        <li>استفاده از پیامک و تماس‌های کوتاه برای حفظ شبکه ارتباطی</li>
+        <li>پیروی از اطلاعیه‌های رسمی از طریق رادیو، تلویزیون و منابع معتبر آنلاین</li>
+        <li>عدم اشتراک‌گذاری اطلاعات حساس در شبکه‌های اجتماعی</li>
+        <li>برنامه‌ریزی برای نقاط ملاقات و روش‌های ارتباطی در مواقع اضطراری</li>
+      </ul>
+      <p>
+        ارتباط موثر، به مدیریت بهتر بحران و کاهش اضطراب کمک می‌کند.
+      </p>
+    </section>
+
+    <section id="psychological-support" tabindex="-1">
+      <h2>حمایت روانی</h2>
+      <p>
+        جنگ و بحران‌های ناشی از آن می‌تواند آسیب‌های روانی جدی به همراه داشته باشد. راهکارهای زیر را به کار ببندید:
+      </p>
+      <ul>
+        <li>صحبت کردن با اعضای خانواده و دوستان درباره احساسات خود</li>
+        <li>جستجوی کمک حرفه‌ای در صورت نیاز به مشاوره روانشناسی</li>
+        <li>انجام فعالیت‌های آرامش‌بخش مانند مدیتیشن و تمرینات تنفسی</li>
+        <li>اجتناب از مصرف مواد مخدر و الکل برای کاهش استرس</li>
+        <li>حفظ روال منظم خواب و تغذیه سالم</li>
+      </ul>
+      <p>
+        توجه به سلامت روانی، کلید عبور از شرایط سخت و بازسازی زندگی است.
+      </p>
+    </section>
+
+    <section id="legal-rights" tabindex="-1">
+      <h2>حقوق قانونی در شرایط جنگ</h2>
+      <p>
+        در شرایط جنگی، حقوق بشر و قوانین بین‌المللی حمایت‌هایی را برای افراد فراهم می‌کند. برخی نکات مهم عبارتند از:
+      </p>
+      <ul>
+        <li>حق دسترسی به کمک‌های انسانی و پزشکی</li>
+        <li>عدم بازداشت یا شکنجه غیرقانونی</li>
+        <li>حق اطلاع‌رسانی و ارتباط با خانواده</li>
+        <li>حمایت از کودکان، زنان و افراد آسیب‌پذیر</li>
+        <li>آگاهی از قوانین ملی و بین‌المللی مربوط به جنگ و درگیری‌ها</li>
+      </ul>
+      <p>
+        آگاهی از حقوق خود می‌تواند به حفاظت بهتر از شما و خانواده‌تان کمک کند.
+      </p>
+    </section>
+
+    <section id="resources" tabindex="-1">
+      <h2>منابع و مراجع معتبر</h2>
+      <p>
+        برای اطلاعات بیشتر و دریافت آموزش‌های تخصصی، به منابع زیر مراجعه کنید:
+      </p>
+      <ul>
+        <li><a href="https://www.icrc.org/en" target="_blank" rel="noopener noreferrer">سازمان بین‌المللی صلیب سرخ</a></li>
+        <li><a href="https://rcs.ir" target="_blank" rel="noopener noreferrer">جمعیت هلال احمر جمهوری اسلامی ایران</a></li>
+        <li><a href="https://www.who.int" target="_blank" rel="noopener noreferrer">سازمان بهداشت جهانی (WHO)</a></li>
+        <li><a href="https://www.unocha.org" target="_blank" rel="noopener noreferrer">دفتر هماهنگی امور بشردوستانه سازمان ملل (OCHA)</a></li>
+        <li><a href="https://www.redcross.org" target="_blank" rel="noopener noreferrer">جمعیت صلیب سرخ آمریکا</a></li>
+      </ul>
+      <p>
+        دسترسی به این منابع کمک می‌کند تا دانش و آمادگی خود را در زمینه مواجهه با جنگ به‌روز نگه دارید.
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© تمامی حقوق این راهنما متعلق به سازمان صلیب سرخ و جمعیت هلال احمر می‌باشد.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      hamburger.setAttribute('aria-expanded', !expanded);
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('open');
+    });
+
+    // Smooth scroll و انیمیشن انتخاب لینک
+    document.querySelectorAll('nav#nav-menu a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if(targetSection) {
+          link.classList.add('active-link');
+          setTimeout(() => link.classList.remove('active-link'), 600);
+
+          targetSection.focus();
+          window.scrollTo({
+            top: targetSection.offsetTop - 60,
+            behavior: 'smooth'
+          });
+
+          // بستن منو روی موبایل
+          if(navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+    });
+
+    // انیمیشن هنگام اسکرول با Intersection Observer
+    const sections = document.querySelectorAll('main section');
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
