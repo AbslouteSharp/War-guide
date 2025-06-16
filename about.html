@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>درباره ما | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+      <li><a href="about.html" class="active">درباره ما</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>درباره من</h1>
+  <p>
+    این وب‌سایت با هدف کمک به مردم کشورم در شرایط جنگی، بحران و ناامنی طراحی شده است. هدف اصلی من ایجاد مرجعی ساده، قابل‌فهم و کاربردی برای هر فرد، از هر قشر و سنی، برای افزایش آمادگی و کاهش خطر در این دوران دشوار است.
+  </p>
+
+  <p>
+    این پروژه به صورت مستقل و داوطلبانه توسعه داده شده و تمام محتوای آن با دقت، بدون جهت‌گیری سیاسی و با تمرکز بر نجات جان انسان‌ها و حفظ سلامت روانی و جسمی طراحی شده است.
+  </p>
+
+  <section>
+    <h2>تماس با من</h2>
+    <ul>
+      <li><strong>گیت‌هاب:</strong> <a href="https://github.com/AbslouteSharp" target="_blank">AbslouteSharp</a></li>
+      <li><strong>تلگرام:</strong> <a href="https://t.me/WhoisinFORmtal" target="_blank">@WhoisinFORmtal</a></li>
+      <li><strong>ایمیل</strong> <a href="sharpdigitalgroup@gmail.com" target="_blank">sharpdigitalgroup@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>با امید به آینده‌ای روشن‌تر</h2>
+    <p>
+      اگر این پروژه برای شما مفید بوده، آن را با دیگران به اشتراک بگذارید. ایمن و سلامت باشید
+    </p>
+  </section>
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

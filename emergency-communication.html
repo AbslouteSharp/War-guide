@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ارتباط اضطراری | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html" class="active">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>ارتباط اضطراری در شرایط بحرانی</h1>
+  <p>در شرایطی که اینترنت، برق یا خطوط تلفن قطع شود، ارتباط با عزیزان، مراکز امدادی یا جامعه اهمیت حیاتی پیدا می‌کند. در این بخش، روش‌های موثر ارتباطی آموزش داده می‌شود.</p>
+
+  <section>
+    <h2>۱. برنامه‌ریزی خانوادگی برای ارتباط</h2>
+    <ul>
+      <li>مکانی از پیش تعیین‌شده برای ملاقات در صورت قطع ارتباط مشخص کنید.</li>
+      <li>شماره‌های تماس مهم را روی کاغذ یادداشت کرده و همراه داشته باشید.</li>
+      <li>اپلیکیشن‌های پیام‌رسانی آفلاین مانند Briar یا Bridgefy را نصب کنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۲. ابزارهای جایگزین ارتباطی</h2>
+    <ul>
+      <li>رادیو موج کوتاه یا FM برای دریافت اخبار و اعلام خطر</li>
+      <li>بوق، آینه، سوت یا نور برای ارسال علامت در فضاهای باز</li>
+      <li>تلفن ماهواره‌ای یا پیام‌رسانی رادیویی در مناطق خاص</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۳. نحوه اعلام وضعیت به دیگران</h2>
+    <ul>
+      <li>در صورت امکان، از پیامک استفاده کنید که احتمال موفقیت بیشتری دارد.</li>
+      <li>در پیام‌ها مختصر، واضح و بدون استرس بنویسید: "من سالم هستم، در محل امن."</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۴. حفظ شارژ و انرژی</h2>
+    <ul>
+      <li>از پاوربانک‌ها و باتری‌های قابل شارژ استفاده کنید.</li>
+      <li>در زمان‌های ضروری گوشی را روشن کنید.</li>
+      <li>اپ‌های پرمصرف مثل شبکه‌های اجتماعی را غیرفعال یا حذف موقت کنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۵. هشدارهای عمومی</h2>
+    <p>اخبار رسمی را فقط از منابع معتبر دنبال کنید. در صورت قطع رسانه‌ها، از مردم محلی یا سازمان‌های امدادی اطلاعات بگیرید.</p>
+  </section>
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

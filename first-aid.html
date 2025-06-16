@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>امداد اولیه | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html" class="active">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>راهنمای امداد اولیه</h1>
+  <p>در مواقع اضطراری، امداد اولیه می‌تواند جان انسان‌ها را نجات دهد. اگر آموزش ندیده‌اید، نگران نباشید—این بخش، مراحل ساده و کاربردی را به شما آموزش می‌دهد.</p>
+
+  <section>
+    <h2>۱. بررسی ایمنی محل</h2>
+    <p>قبل از نزدیک شدن به مصدوم، اطمینان حاصل کنید که خطر (آتش، بمب دوم، برق و...) وجود ندارد. اول ایمنی خود را حفظ کنید.</p>
+  </section>
+
+  <section>
+    <h2>۲. بررسی وضعیت مصدوم</h2>
+    <ul>
+      <li>آیا تنفس دارد؟ ضربان دارد؟</li>
+      <li>اگر بی‌هوش است ولی تنفس دارد، به پهلو بخوابانید.</li>
+      <li>اگر تنفس ندارد، CPR را آغاز کنید (فقط در صورت آموزش).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۳. کنترل خونریزی</h2>
+    <ul>
+      <li>فشار مستقیم روی زخم وارد کنید با گاز استریل یا پارچه تمیز.</li>
+      <li>عضو آسیب‌دیده را بالا نگه دارید.</li>
+      <li>از بستن محکم عضو (در صورت نیاز) برای قطع خونریزی شدید استفاده کنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۴. شکستگی و دررفتگی</h2>
+    <p>عضو را ثابت نگه دارید و حرکت ندهید. اگر وسایل دارید، آتل ببندید. در صورت درد شدید یا خونریزی، سریعاً کمک تخصصی بخواهید.</p>
+  </section>
+
+  <section>
+    <h2>۵. سوختگی</h2>
+    <ul>
+      <li>محل سوختگی را با آب خنک نه آب یخ برای ۱۰-۱۵ دقیقه خنک کنید.</li>
+      <li>لباس چسبیده به زخم را جدا نکنید.</li>
+      <li>از پماد یا کرم روی سوختگی استفاده نکنید مگر توسط پزشک.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۶. کیف کمک‌های اولیه</h2>
+    <ul>
+      <li>گاز استریل، باند، چسب زخم</li>
+      <li>قیچی، پنس، دستکش استریل</li>
+      <li>محلول ضدعفونی، پماد آنتی‌بیوتیک</li>
+      <li>تب‌سنج، قرص مسکن، داروهای شخصی مهم</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

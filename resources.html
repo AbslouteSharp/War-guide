@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>منابع ضروری | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html" class="active">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>منابع مهم و ضروری</h1>
+  <p>در این بخش لینک‌ها، اپلیکیشن‌ها، شماره‌ها و فایل‌هایی معرفی می‌شوند که می‌توانند در شرایط بحرانی نجات‌بخش باشند.</p>
+
+  <section>
+    <h2>۱. اپلیکیشن‌های مفید</h2>
+    <ul>
+      <li><strong>Briar:</strong> پیام‌رسان آفلاین و امن برای زمان قطع اینترنت (<a href="https://briarproject.org/" target="_blank">دانلود</a>)</li>
+      <li><strong>Bridgefy:</strong> ارتباط با بلوتوث بدون اینترنت (<a href="https://bridgefy.me/" target="_blank">وبسایت</a>)</li>
+      <li><strong>Orbot:</strong> اتصال امن به اینترنت جهانی (<a href="https://orbot.app/" target="_blank">وبسایت</a>)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۳. شماره‌های اضطراری و کانال‌های امن</h2>
+    <ul>
+      <li><strong>اورژانس:</strong> 115</li>
+      <li><strong>آتش‌نشانی:</strong> 125</li>
+      <li><strong>هلال احمر:</strong> 112</li>
+      <li><strong>تلفن گویا بحران:</strong> 118</li>
+    </ul>
+  </section>
+
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

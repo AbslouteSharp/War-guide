@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>روانشناسی بحران | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html" class="active">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>مدیریت روان در بحران</h1>
+  <p>در شرایط جنگی، فشارهای روانی ممکن است بسیار شدید شوند. این صفحه کمک می‌کند تا با راهکارهای ساده ولی مؤثر، خود و عزیزانتان را آرام نگه دارید.</p>
+
+  <section>
+    <h2>۱. درک واکنش‌های طبیعی</h2>
+    <ul>
+      <li>اضطراب، بی‌خوابی، عصبانیت یا گریه واکنش‌های طبیعی هستند.</li>
+      <li>خود را بابت این احساسات سرزنش نکنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۲. تمرینات آرام‌سازی</h2>
+    <ul>
+      <li>نفس عمیق: دم از بینی، حبس ۳ ثانیه، بازدم آرام از دهان.</li>
+      <li>مراقبه کوتاه: تمرکز روی تنفس یا یک تصویر آرامش‌بخش.</li>
+      <li>انجام حرکات کششی نرم برای کاهش تنش عضلانی.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۳. ایجاد ساختار روزمره</h2>
+    <ul>
+      <li>خواب و بیداری منظم تا حد ممکن</li>
+      <li>زمان مشخص برای غذا، استراحت، صحبت و کمک</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۴. حمایت روانی از کودکان</h2>
+    <ul>
+      <li>با زبان ساده و صادقانه با آن‌ها صحبت کنید.</li>
+      <li>از اخبار و صحنه‌های خشن دور نگه‌شان دارید.</li>
+      <li>اجازه دهید احساسات‌شان را بیان کنند (نقاشی، بازی، گفتگو).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۵. کمک گرفتن بدون شرم</h2>
+    <p>در صورت بروز علائم شدید (حملات وحشت، افکار خودآزاری، بی‌قراری شدید)، از مشاور، روانشناس، مددکار یا خطوط حمایتی استفاده کنید. این نشانه‌ی شجاعت است، نه ضعف.</p>
+  </section>
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

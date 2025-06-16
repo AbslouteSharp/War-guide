@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اقدامات فوری | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html" class="active">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>اقدامات فوری در شرایط جنگی</h1>
+  <p>در لحظات اولیه‌ی بروز جنگ یا حمله، اقدامات سریع و دقیق می‌تواند جان شما و خانواده‌تان را نجات دهد. لطفاً با دقت موارد زیر را مطالعه و تمرین کنید.</p>
+
+  <section>
+    <h2>۱. حفظ آرامش</h2>
+    <p>نفس عمیق بکشید. وحشت‌زدگی می‌تواند باعث تصمیم‌گیری اشتباه شود. اول خودتان را کنترل کنید تا بتوانید به دیگران کمک کنید.</p>
+  </section>
+
+  <section>
+    <h2>۲. پناه گرفتن سریع</h2>
+    <p>در صورت شنیدن صدای هشدار یا انفجار، فوراً به پناهگاه یا مکان امن بروید (زیرزمین، اتاق بدون پنجره، یا دیوارهای بتنی داخلی).</p>
+  </section>
+
+  <section>
+    <h2>۳. قطع منابع خطرناک</h2>
+    <ul>
+      <li>گاز را سریع ببندید.</li>
+      <li>برق و آب را در صورت لزوم قطع کنید.</li>
+      <li>در صورت نشت، از وسایل الکترونیکی استفاده نکنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۴. همراه داشتن کیف اضطراری</h2>
+    <p>همیشه یک کیف آماده در نزدیکی خود داشته باشید شامل:</p>
+    <ul>
+      <li>آب و غذای خشک برای حداقل ۳ روز</li>
+      <li>چراغ‌قوه، باتری اضافه، سوت</li>
+      <li>داروهای ضروری، کمک‌های اولیه</li>
+      <li>مدارک شناسایی، پول نقد</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۵. ارتباط با اطرافیان</h2>
+    <p>اگر امن است، به دیگران هشدار دهید. در صورت در دسترس بودن اینترنت یا شبکه اضطراری، موقعیت خود را اعلام کنید.</p>
+  </section>
+
+  <section>
+    <h2>۶. شنیدن اخبار رسمی</h2>
+    <p>از رادیو، موبایل یا منابع معتبر برای پیگیری اخبار و دستورالعمل‌های اضطراری استفاده کنید. از شایعات دوری کنید.</p>
+  </section>
+
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>پناه‌گیری و امنیت | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html" class="active">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>پناه‌گیری و حفظ امنیت</h1>
+  <p>یافتن مکان ایمن و نحوه‌ی صحیح پناه‌گیری، مهم‌ترین راه نجات در شرایط جنگی و بمباران است. این بخش به شما کمک می‌کند که بهترین تصمیم را بگیرید.</p>
+
+  <section>
+    <h2>۱. پناه‌گیری در خانه</h2>
+    <ul>
+      <li>به اتاقی بدون پنجره بروید، مثل سرویس بهداشتی یا راهرو مرکزی.</li>
+      <li>درها و پنجره‌ها را ببندید و پشت دیوارهای ضخیم بنشینید.</li>
+      <li>اگر پنجره وجود دارد، از مبلمان سنگین یا تشک برای محافظت استفاده کنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۲. اگر پناهگاه عمومی در دسترس بود</h2>
+    <ul>
+      <li>نزدیک‌ترین پناهگاه محلی را از قبل شناسایی کنید.</li>
+      <li>با رعایت آرامش و سرعت، به آنجا منتقل شوید.</li>
+      <li>وسایل اضطراری را همراه داشته باشید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۳. در فضای باز چه کنیم؟</h2>
+    <ul>
+      <li>روی زمین دراز بکشید، دست‌ها را روی سر بگذارید.</li>
+      <li>در گودال، پشت دیوار یا زیر سطوح سخت پناه بگیرید.</li>
+      <li>از مناطق باز یا نزدیک ساختمان‌های در حال ریزش فاصله بگیرید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۴. ایمنی در ساختمان‌های بلند</h2>
+    <ul>
+      <li>از آسانسور استفاده نکنید.</li>
+      <li>در صورت هشدار، به طبقات پایین‌تر و مرکزی بروید.</li>
+      <li>در نزدیکی راه‌پله‌های بتنی پناه بگیرید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۵. همراه داشتن کیت پناه‌گیری</h2>
+    <ul>
+      <li>رادیوی دستی، چراغ قوه، آب معدنی، کمک‌های اولیه</li>
+      <li>ماسک ساده یا پارچه مرطوب برای جلوگیری از استنشاق گردوغبار</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

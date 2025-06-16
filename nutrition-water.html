@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تغذیه و آب | راهنمای شرایط جنگی</title>
+
+  <!-- فونت وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+  <!-- استایل -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation">
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو">&#9776;</button>
+    <div class="logo">راهنمای شرایط جنگی</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد اولیه</a></li>
+      <li><a href="nutrition-water.html" class="active">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباط اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی</a></li>
+      <li><a href="resources.html">منابع</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>تغذیه و تأمین آب در بحران</h1>
+  <p>در شرایط جنگی ممکن است دسترسی به آب سالم و غذای مناسب به شدت محدود شود. در این صفحه، نکاتی برای ذخیره، مدیریت و ایمن‌سازی تغذیه و آب ارائه می‌شود.</p>
+
+  <section>
+    <h2>۱. ذخیره آب</h2>
+    <ul>
+      <li>برای هر نفر روزانه حداقل ۲ لیتر آب آشامیدنی ذخیره کنید.</li>
+      <li>از بطری‌های پلاستیکی شفاف استفاده کنید و دور از نور نگهداری شوند.</li>
+      <li>در صورت کمبود، آب باران یا آب منابع طبیعی را با جوشاندن یا قرص کلر تصفیه کنید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۲. منابع جایگزین آب</h2>
+    <ul>
+      <li>یخ ذوب‌شده، آب ته کولر آبی، یا آب کنسروها می‌توانند موقتاً استفاده شوند.</li>
+      <li>هرگز آب رادیاتور، ماشین لباسشویی یا باتری را ننوشید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۳. مواد غذایی مناسب شرایط بحران</h2>
+    <ul>
+      <li>کنسروها (حبوبات، ماهی، تن، لوبیا)</li>
+      <li>غذاهای خشک‌شده مانند نان خشک، بیسکویت، مغزها، کشمش</li>
+      <li>مواد پرکالری و ماندگار (شکلات، کره بادام‌زمینی)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۴. اصول نگهداری مواد غذایی</h2>
+    <ul>
+      <li>در مکان خشک، خنک و تاریک نگهداری شوند.</li>
+      <li>تاریخ انقضا را مرتب بررسی کنید و زودتر مصرف کنید.</li>
+      <li>مواد باز شده را در ظروف دربسته نگه دارید.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>۵. رعایت بهداشت</h2>
+    <ul>
+      <li>قبل از مصرف مواد غذایی دست‌ها را بشویید یا ضدعفونی کنید.</li>
+      <li>از مصرف آب و غذایی که بو یا ظاهر غیرطبیعی دارد بپرهیزید.</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>راهنمای جامع شرایط جنگی - خانه</title>
+
+  <!-- فونت فارسی وزیر -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" />
+
+  <!-- استایل اصلی -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <nav class="container" role="navigation" aria-label="منوی اصلی سایت">
+    <!-- منوی همبرگری سمت راست -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="باز کردن منو" aria-expanded="false">
+      &#9776;
+    </button>
+
+    <!-- لوگو -->
+    <div class="logo" tabindex="0">راهنمای شرایط جنگی</div>
+
+    <!-- منو -->
+    <ul class="nav-links" id="nav-links" role="menu">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد و کمک‌های اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباطات اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی و مدیریت استرس</a></li>
+      <li><a href="resources.html">منابع و آموزش‌ها</a></li>
+      <li><a href="about.html">درباره ما</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>خوش آمدید به راهنمای جامع شرایط جنگی</h1>
+  <p>در این سایت با گام‌های علمی و دقیق، اقدامات لازم برای حفظ جان، امنیت و سلامت خود و خانواده‌تان را در شرایط جنگی می‌آموزید.</p>
+
+  <section>
+    <h2>چرا این راهنما؟</h2>
+    <p>شرایط جنگی می‌تواند خطرناک و غیرقابل پیش‌بینی باشد. این راهنما به زبان ساده و کاربردی برای همه مردم طراحی شده است تا با آمادگی و آگاهی، جان خود را حفظ کنند.</p>
+  </section>
+
+  <section>
+    <h2>بخش‌های اصلی سایت</h2>
+    <ul>
+      <li><a href="emergency-actions.html">اقدامات فوری</a></li>
+      <li><a href="shelter-security.html">پناه‌گیری و امنیت</a></li>
+      <li><a href="first-aid.html">امداد و کمک‌های اولیه</a></li>
+      <li><a href="nutrition-water.html">تغذیه و آب</a></li>
+      <li><a href="emergency-communication.html">ارتباطات اضطراری</a></li>
+      <li><a href="psychology.html">روانشناسی و مدیریت استرس</a></li>
+      <li><a href="resources.html">منابع و آموزش‌ها</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>تماس و همکاری</h2>
+    <p>برای همکاری یا ارسال پیشنهاد، لطفاً از طریق <a href="about.html">صفحه درباره ما</a> با ما در ارتباط باشید.</p>
+  </section>
+</main>
+
+<!-- اسکریپت -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", nav.classList.contains("active"));
+  });
+</script>
+
+</body>
+</html>
